@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+    <title>Kocham Cię Emcia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW-2wXlYZ1jT80D9coBgkQ60_AxdQFfKLtEg&s">
+</head>
+<body>
+    <div id="calosc">
+
+        <div id="pasek">
+            
+            </div>
+                <div id="Main">
+                
+                <div id="p1">
+                    <h1 id="Pytanie">Zostaniesz moją walentynką?</h1>
+                    <div id="guziki">
+                    <button id="tak" style="scale: 1;" onclick="tak()">Tak</button>
+                    <button id="nie" onclick="nie()">Nie</button>
+                </div>
+                
+            </div>
+            <div id="p2">
+                <h1 id="Pytanie">Jupiiiiiiiiiiiiiiii</h1>
+                
+                <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDBwc2FwcWY0bXhpZ2w2dmQxNDZlZTl4N3BsdzZ0NnYwemVoYzViMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/bZi83fG4Auk4uDi6Lt/giphy.gif" alt="gif z lofcianym pusheenem" id="pushen">
+                <button id="klik" onclick="klik()">❤ Kliknij mnie ❤</button>
+            </div>
+            <div id="p4">
+                <h1>Co byś chciała zjeść?</h1>
+                <div id="szamka">
+                        <div class="kafelek" id="pizza" onclick="jedzonko(event)">
+                            <img src="https://kuchnialidla.pl/img/PL/1250x700/86b707cbec50-22934233c328-kw42-2023-lidl-new-york-pizza-przepis-na-pizze-w-stylu-nowojorskim.webp" alt="Obrazek" class="obrazek" id="pizza">
+                            <div class="tekst" id="pizza">Pizza</div>
+                        </div>
+                            
+                        
+                        <div class="kafelek" id="sushi" onclick="jedzonko(event)">
+                            <img src="https://kuchnia-domowa.pl/images/content/623/domowe_sushi.webp" alt="Obrazek" class="obrazek" id="sushi">
+                            <div class="tekst" id="sushi">Sushi</div>
+                        </div>
+                        <div class="kafelek" id="nalesniki" onclick="jedzonko(event)">
+                            <img src="https://pl.vihaad.com/wp-content/uploads/2024/09/Nalesniki-z-twarogiem-i-truskawkami.webp" alt="Obrazek" class="obrazek" id="nalesniki">
+                            <div class="tekst" id="nalesniki">Naleśniki</div>
+                        </div>
+                        <div class="kafelek" id="burger" onclick="jedzonko(event)">
+                            <img src="https://bbq.pl/upload/stblog/1/57/152/57152large.jpg" alt="Obrazek" class="obrazek" id="burger" >
+                            <div class="tekst" id="burger" >Burgery</div>
+                            
+                        </div>
+            </div>
+            <button id="tak" onclick="dalej()">Dalej</button>
+        </div>
+        
+        <div id="p3">
+            <h1>Wybierz Termin :3</h1>
+           <div id="datak" onclick="wybierz()">14.04.2024 16:30</div>
+           <button id="tak" onclick="dalejog()">Dalej</button>
+        </div>
+        <div id="p5">
+             <h1>Co będziemy robić?</h1>
+             <div id="szamka2">
+                <div class="kafelek" id="drobiazgi">
+                    <img src="https://images.herzindagi.info/image/2023/Jan/gifffff22222.jpg" alt="Obrazek" class="obrazek" id="burger" >
+                    <div class="tekst" id="drobiazgi">Dawać sobie drobiazgi</div>
+                </div>
+                
+        </div>
+            <button id="tak2" onclick="dalej2()">Dalej</button>
+        </div>
+        <div id="p6">
+            <h1>Jak bardzo heppi jesteś?</h1>
+            <img src="https://i.pinimg.com/originals/7b/8a/a4/7b8aa485daf019c2a409d731bbe3f00c.gif" alt="pusheen" srcset="" id="pushen">
+            <input type="range" id="suwak" min="1" max="10" value="6" step="1" onclick="hepilevel()">
+            <div id="poziomheppi"><h1>Poziom bycia heppi:</h1></div>
+            <button id="tak2" onclick="dalej3()">Dalej</button>
+        </div>
+        <div id="p7">
+            <h1>Już prawie :3</h1>
+            <div class="sumary">
+                <div id="tekst">📅 14 Luty 2025 <br>
+                    🕒 16:30 <br>
+                </div>        
+        </div>
+            <div class="sumary" id="food">
+                <img src="" alt="" srcset="" id="zdjecie">
+                <div id="foodz" >Wybrane jedzonko: Pizza</div>
+            </div>
+
+            <div class="sumary">
+                <img src="https://images.herzindagi.info/image/2023/Jan/gifffff22222.jpg" alt="" srcset="">
+                <div id="tekst">Wybrana aktywność: Dawanie sobie drobiazgów</div>
+            </div>
+            <div class="sumary" id="heppi">
+                
+                <div id="tekst1">Poziom heppi: </div>
+            </div>
+            <button id="tak2" onclick="dalej4()">Dalej </button>
+        
+    </div>
+    <div id="p8">
+        <img src="https://cdn.discordapp.com/attachments/1089609929079394305/1339428071517720598/Messenger_creation_1FA7B683-939E-4F90-B0B7-50B0127B839D.jpg?ex=67aeaf19&is=67ad5d99&hm=86a474364d7813e4add9e2eccba450403799d2f38ed8da5ccd026a9d517a0a39&" alt="" srcset="" id="pushen">
+        <h1>Do Zobaczenia Kitek</h1>
+        <div id="tekst">Pamiętaj 14 luty 2025 16.30 :3</div>
+        <button onclick="location.reload()" id="tak2">Spróbuj jeszcze raz</button>
+
+    </div>
+        <footer>
+            Kocham cię Emciu <3 
+        </footer>
+    
+    </body>
+
+<script src="script.js"></script>

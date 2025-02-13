@@ -1,0 +1,302 @@
+body{
+    background-color: whitesmoke;
+    margin: 0px;
+    font-family: "Karla", serif;
+    overflow: hidden;
+    zoom: 90%;
+    transition: 0.4s;
+    
+}
+#calosc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    column-gap: 20px;
+
+}
+#Main{
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+    width: 1050px;
+    height: 150px;
+    padding: 10px;
+    box-shadow: 0px 8px 10px 1px rgb(185, 184, 184);
+    transition: 1s;
+    z-index: 2;
+    
+    
+}
+h1 #p1, h1 #p2{
+    text-align: left;
+    font-size: 30px;
+    color: gray;
+    user-select: none;
+    
+}
+#pasek{
+    display: block;
+    background-color: rgb(247, 203, 217);
+    width: 100%;
+    height: 80px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: crimson;
+    font-size: 20px;
+     
+    
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    background-color: black;
+    width: 100%;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-align: center;
+    float: left;
+    left: 0px;
+}
+
+button{
+    padding: 16px;
+    border-radius: 50px;
+    border: none;
+    width: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Karla", sans-serif;
+}
+#tak{
+    background-color: rgb(219, 16, 84);
+    float:left;
+    color: whitesmoke;
+    margin-left: 80px;
+    transition: 0.8s;
+    scale: 1;
+    
+}
+#nie{
+    background-color: rgb(247, 203, 217);
+    float:right;
+    color: crimson;
+    margin-right: 80px;
+    transition: 1s;
+    
+}
+#tak:hover{
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+#nie:hover{
+    
+    cursor: pointer;
+    /* transform: translate(1000px, 0px); */
+}
+h1{
+    user-select: none;
+}
+img#pushen{
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:20px ;
+    user-select: none;
+    
+}
+#klik{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(90deg, rgba(213,136,181,1) 0%, rgba(242,1,67,1) 100%);
+    color: white;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    font-weight: bold;
+    font-size: 50px;
+}
+#klik:hover{
+    filter: brightness(1.2);
+    cursor: pointer;
+    letter-spacing: 5px;
+}
+.serduszko {
+    position: absolute;
+    font-size: 30px;
+    color: red;
+    animation: spadajaceSerduszko 5s linear infinite;
+    z-index: 1;
+    user-select: none;
+
+}
+
+#szamka{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    row-gap: 100px;
+    margin-top: 50px;
+}
+
+
+
+
+
+@keyframes spadajaceSerduszko {
+    0% {
+        top: -30px;  
+        left: random(0, 100%);
+        opacity: 1;
+    }
+    100% {
+        top: 100%;  
+        opacity: 0;  
+    }
+}
+
+.kafelek {
+    width: 200px;
+    height: 180px;
+    border-radius: 20px; 
+    overflow: hidden; 
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    box-shadow: 0px 8px 10px 1px rgb(185, 184, 184);
+}
+
+.obrazek {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px;
+}
+
+.tekst {
+    padding: 10px;
+    text-align: center;
+    background-color: #fff; 
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px;
+}
+
+.kafelek:hover{
+    
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0px 8px 10px 1px rgb(218, 85, 111);
+}
+#p4 button#tak, #p3 button#tak{
+    padding: 20px;
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 0px;
+    font-size: 30px;
+}
+#datak{
+    display: block;
+    width: 200px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    border-radius: 20px;
+    background-color: rgb(219, 16, 84);
+    transition: 0.8s;
+}
+#datak:hover{
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+button#tak2{
+    padding: 20px;
+    width: 200px;
+    margin-top: 30px;
+    margin-right: 0px;
+    font-size: 30px;
+    background-color: rgb(219, 16, 84);
+    color: white;
+}
+button#tak2:hover{
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+#heppipoziom{
+    width: 100%;
+}
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background: rgb(219, 16, 84);
+    border-radius: 5px;
+    outline: none;
+    transition: 0.5s;
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 50px;
+    height: 50px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><text y="20" font-size="20">🩷</text></svg>') no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+    border: none;
+}
+#poziomheppi{
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.sumary{
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 18px;
+    font-weight: bold;
+    color: grey;
+    font-size: 26px;
+    margin: auto;
+    margin-top: 10px;
+    width: 90%;
+    height: auto;
+}
+
+.sumary img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: right;
+}
+
+.sumary#food img{
+    height: 240px;
+}
+
+.sumary#heppi{
+    text-align: center;
+    
+}
+#p8 h1{
+    text-align: center;
+    color: crimson;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+#p8 #tekst{
+    text-align: center;
+    color: crimson;
+    font-size: 40px;
+    margin-top: 10px;
+
+}
+#p8 img{
+    border-radius:15px ;
+}
